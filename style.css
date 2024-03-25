@@ -1,0 +1,524 @@
+*{
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+}
+h2,h3,h4,h5,li,p{
+    color: white;
+}
+hr{
+    color: #353434;
+}
+
+:hover{
+    color: var(#353434);
+}
+
+
+
+body{
+ display: flex;
+ background-color:black}
+.left{
+    flex: 1.5;
+    position: sticky;
+    top: 0%;
+    /* border: 1px solid #fbf8f8; */}
+
+.right{
+    border: 1px solid #000;
+    flex:15;
+    width: 100%;
+    margin: auto;}
+/* nav */
+nav{
+    width: 126px;
+    /* border: 1px solid #d22d2d; */
+    background-color: rgb(58, 57, 57);
+    height: 100%;
+    position: fixed;
+    top: 0;}
+
+    
+nav ul{
+    
+}
+nav ul li{
+ height: 100px;
+ border: 1px solid transparent;
+ position: relative;
+}
+
+nav ul .s_img{
+    background-image: url(./image/man_smoke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    background-color: #7c7b7b7a;
+}
+/* 이미지 위에 투명 배경색 덮기 */
+nav ul .s_img::before{
+ 
+}
+
+nav ul li{   
+}
+
+nav ul li a{
+color: white;
+display: flex;
+justify-content: center;
+margin-top: 45px;
+}
+
+nav ul li:hover{
+background-color: #000;
+
+}
+
+nav ul li a i{
+    position: absolute;
+    top: 25%;
+    font-size: 30px;
+}
+
+/* main */
+main{
+    width: 80%;
+   margin: auto;
+}
+.main_inner{
+    border: 1px solid #000;
+    width: 900px;
+    margin: auto;
+}
+.sentence{
+    border: 1px solid #000;
+    width: auto;
+    text-align: center;
+    height: 200px;
+    margin-top: 60px;
+    line-height: 110px;
+}
+
+main .main_inner .sentence h2{
+    font-size: 85px;
+    font-weight: 300;
+}
+.sentence span{
+    border: 1px solid #000;
+    font-size:20px;
+    color: white;
+    }
+.main_inner a img{
+    width: 100%;
+    margin-bottom: 180px;
+}
+
+section{
+    width: 80%;
+   margin: auto;}
+/* name */
+.Name{
+    width: 100%;
+    height: auto;
+}
+.Name .Name_inner{
+   /*  border: 1px solid #e41a1a; */
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Name_inner h2 a{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+.Name_inner h2 a:hover{
+    color: #7c7b7b;
+    transition: 0.2s;
+}
+
+/* 라인 안됨 */
+/* .Name_inner h2::before{
+    color: #d22d2d;
+   width: 600px;
+   height: 100px;
+} */
+.Name .Name_inner .line{
+    width: 190px;
+    background-color: white;
+}
+.Name .Name_inner p{
+    margin: 20px auto;
+}
+
+/* skills */
+.Skills{
+    width: 100%;
+    height: auto;}
+.Skills_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Skills_inner h2{
+    padding: 20px 0;
+
+}
+.Skills_inner h2 a{
+    font-size: 25px;
+    color: white;
+    }
+.Skills_inner h2 a:hover{
+    color: #7c7b7b;
+    transition: 0.2s;
+}
+
+.Skills_content1{
+    border: 1px solid #000;
+}
+.Skills_content1 h3{
+    font-size: 10px;
+    margin-bottom: 10px;}
+
+.Skills_content1 .box{
+    display: flex;
+}
+/* box1 그래프 */
+.Skills_content1 .box1 div:nth-child(1){
+    width: 850px;
+    height: 20px;
+    background-color: gray;
+}   
+.Skills_content1 .box1 div:nth-child(2)
+{
+background-color:white;
+width: 50px;
+height: 20px;}
+/* box2 그래프 */
+.Skills_content1 .box2 div:nth-child(1){
+    width: 750px;
+    height: 20px;
+    background: gray;
+}   
+.Skills_content1 .box2 div:nth-child(2)
+{
+background-color: white;
+width: 150px;
+height: 20px;}
+
+/* box3 그래프 */
+.Skills_content1 .box3 div:nth-child(1){
+    width: 650px;
+    height: 20px;
+    background-color: gray;
+}   
+.Skills_content1 .box3 div:nth-child(2)
+{
+background-color: white;
+width: 250px;
+height: 20px;}
+
+
+.Skills_content2{
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(222, 216, 216);
+}
+.Skills_content2 div{
+flex: auto;
+text-align: center;
+
+}
+.Skills_content2 h4{
+    padding-top: 20px;
+    color: #000;
+}
+.Skills_content2 h5{
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.Skills_content3{
+    margin-top: 20px;
+    width: 130px;
+    padding: 8px;
+    font-size: 10px;
+}
+
+/* price */
+.Price{
+    width: 100%;
+    height: auto;
+}
+.Price_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Price_inner h2{
+    font-size: 25px;
+    margin: 20px auto;
+}
+.Price_inner h2 a{
+    color: white;
+}
+.Price_inner h2 a:hover{
+    color: #7c7b7b;
+    transition: 0.2s;
+}
+.Price_inner .big{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    
+}
+.Price_content1{
+    margin-right: 18px;
+}
+
+
+.Price_content1 ul,
+.Price_content2 ul{
+
+}
+.Price_content1 ul li,
+.Price_content2 ul li{
+    border-bottom:1px solid #353434; 
+    background-color: rgb(172, 171, 171);
+    color: black;
+    padding: 10px;
+    font-weight: 400;
+}
+/* 강조 */
+.Price_content1 ul .grade,
+.Price_content2 ul .grade{
+    font-size: 22px;
+    padding: 20px;
+    background-color: rgb(57, 56, 56);
+    color: rgb(172, 171, 171);
+    font-weight: 600;
+}
+
+.Price_content1 ul .money,
+.Price_content2 ul .money{
+    padding: 20px;
+}
+.Price_content1 ul .money b,
+.Price_content2 ul .money b{
+    font-size: 20px;
+}
+
+li button{
+  margin: 20px auto;
+  padding: 5px 10px;
+}
+.Price_content2{
+    flex: 1;
+}
+
+
+
+/*Reputation*/
+.Reputation{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.Reputation_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Reputation_inner h2{
+    margin:25px 0;
+    
+}
+.Reputation_inner h2 a{
+    font-size: 25px;
+    color: white;
+}
+
+.Reputation_inner h2 a:hover{
+    color: #7c7b7b;
+    transition: 0.2s;
+}
+
+.Reputation .ct1,
+.Reputation .ct2{
+    display: flex;
+    border: 1px solid #000;
+}
+.Reputation .ct2{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.Reputation .ct1 img,
+.Reputation .ct2 img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.Reputation .ct1 .dese,
+.Reputation .ct2 .dese{
+    border: 1px solid #000;
+    margin-left: 10px;
+    line-height: 30px;
+    color: rgb(56, 56, 56);
+}
+.Reputation .ct1 .dese h4,
+.Reputation .ct2 .dese h4
+{color: rgb(85, 84, 84);
+    font-weight: 400;
+}
+
+/* Photos */
+.Photos{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.Photos_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Photos_inner h2{
+    font-size: 25px;
+    margin: 20px auto;
+}
+.Photos_inner hr{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.Photos_content{
+    border: 1px solid #000;
+    height:900px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;}
+                         
+.Photos_content>div{
+    border: 1px solid #000;  
+    position: relative;
+}
+
+.Photos_content>div:nth-child(1){
+    grid-area: 1/1/2/2; 
+    background-image: url(./image/MyPhotos_01.jpg);
+    background-size: cover;
+}
+.Photos_content>div:nth-child(2){
+    grid-area: 1/2/2/3;
+    background-image: url(./image/MyPhotos_02.jpg);
+    background-size: cover;
+    
+}
+.Photos_content>div:nth-child(3){
+    grid-area: 2/1/4/2;
+    background-image: url(./image/MyPhotos_03.jpg);
+    background-size: cover;
+  
+    
+}
+.Photos_content>div:nth-child(4){
+    background-image: url(./image/MyPhotos_04.jpg);
+    background-size: cover;
+   
+}
+
+.Photos_content>div:nth-child(5){
+    background-image: url(./image/MyPhotos_05.jpg);
+    background-size: cover;
+}
+.Photos_content>div:nth-child(6){
+    background-image: url(./image/MyPhotos_06.jpg);
+    background-size: cover;
+}
+.Photos_content>div:nth-child(7){
+    background-image: url(./image/MyPhotos_07.jpg);
+    background-size: cover;
+}
+/* Contact*/
+.Contact{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.Contact_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.Contact_inner h2{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.Contact_inner hr{
+    width: 150px;
+    margin-bottom: 10px;
+}
+.Contact_content1{
+   height: auto;
+}
+.Contact_content1 ul{
+/*     line-height: 30px; */
+}
+.Contact_content1 ul li i{
+    padding: 10px;}
+.Contact_content1 li a{
+    color: rgb(91, 90, 90);
+    font-size: 10px;
+}
+
+.Contact_content2{}
+.Contact_content2 h4{
+    margin-top: 20px;
+    color: rgb(91, 90, 90);
+    font-size: 10px;
+    font-weight: 100;
+}
+.Contact_content2 input{
+    width: 900px;
+    padding: 10px;
+    margin: 5px;
+}
+.Contact_content2 .send{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 130px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+}
+.footer_inner{
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+.sns{}
+.sns i{
+    font-size: 25px;
+    color: #848484;
+    margin-bottom: 20px;
+}
+.sns i:hover{
+    color: #353434;
+
+}
+.footer_inner h4{
+    color: #848484;
+}
+.footer_inner h4 span{
+    text-decoration: underline;
+    margin-bottom: 500px;
+}
